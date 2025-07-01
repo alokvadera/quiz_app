@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Language Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Select Language & Difficulty:</h2>
+
+    <select id="language-select">
+      <option value="">-- Choose Language --</option>
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="cpp">C++</option>
+    </select>
+
+    <select id="difficulty-select">
+      <option value="">-- Choose Difficulty --</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <button id="start-btn">Start Quiz</button>
+
+    <div id="quiz-content" style="display: none;">
+        <div class="progress-container">
+  <div class="progress-bar" id="progress-bar"></div>
+</div>
+      <h2 id="question">Question</h2>
+      <div id="options"></div>
+      <button id="next-btn" disabled>Next</button>
+      <button id="restart-btn" style="display: none;">Restart Quiz</button>
+      <div id="star-badge" style="display: none;"> 🌟 Perfect Score! You're a Quiz Master! 🌟</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
